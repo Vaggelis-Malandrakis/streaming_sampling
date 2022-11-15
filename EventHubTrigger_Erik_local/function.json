@@ -1,0 +1,15 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "eh2",
+      "connection": "eventhubns2_mypolicy_EVENTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default",
+      "dataType" : "string"
+    }
+  ]
+}
