@@ -15,7 +15,7 @@
       "name": "outputBlob",
       "direction": "out",
       "type": "blob",
-      "path": "working-container/{rand-guid}",
+      "path": "working-container/{rand-guid}.txt",
       "connection": "synopsisstore_STORAGE"
     }
   ]

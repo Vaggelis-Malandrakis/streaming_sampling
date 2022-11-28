@@ -11,7 +11,7 @@ def send_event_data_batch(producer):
     res_list = []
     # copy_res_list = []
 
-    for _ in range(5*1000):
+    for _ in range(10*1000):
         res_list.append(np.sin(idx))
         # rdm = np.random.randint(1, 100)
         # res_list.append(rdm)
@@ -21,13 +21,14 @@ def send_event_data_batch(producer):
 
     # Without specifying partition_id or partition_key
     # the events will be distributed to available partitions via round-robin.
-    for k in range(1):
+    for k in range(2):
         event_data_batch = producer.create_batch()
         for i in range(1000):
             info = str(idx_list.pop(0)) + "," + str(res_list.pop(0))
             print('Sending: ' + info)
             event_data_batch.add(EventData(info))
         producer.send_batch(event_data_batch)
+        time.sleep(5)
 
 
 def send_event_data_batch_with_properties(producer):
