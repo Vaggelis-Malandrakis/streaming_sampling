@@ -15,7 +15,7 @@
       "name": "outputBlob",
       "direction": "out",
       "type": "blob",
-      "path": "working-container/concise_sampling_{rand-guid}.txt",
+      "path": "working-container/histogram_{rand-guid}.txt",
       "connection": "synopsisstore_STORAGE"
     }
   ]
