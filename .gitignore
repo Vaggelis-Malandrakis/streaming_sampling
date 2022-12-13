@@ -13,6 +13,5 @@ EventHubTrigger_Erik_local/*
 blob_storage/*.txt
 histogram_trigger/sample.dat
 sampling_notebooks/.ipynb_checkpoints/*
-sampling_notebooks/data13to17Feb2018.csv
-sampling_notebooks/time_series_k_means.ipynb
 src/jenks/
+dataset/data13to17Feb2018.csv
