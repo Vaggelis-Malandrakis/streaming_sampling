@@ -22,7 +22,9 @@ The project is organized under 3 different main axes:
 	* clustering_validation_jenks_method: Apply and validate jenks method in concise sampling
 	* equi_depth_histograms: Implementation of equi-depth histograms
 	* data_exploration: Basic investigation of the dataset 
-	* ...
+	* traffic_simulation: Implementation of stream simulator.
+	* change_detection: Implementation of change detection method.
+
 * send_receive_code: Python scripts for sending the data in a streaming format to an Azure Event Hub.
 * concise_sampling_trigger: Implementation of concise sampling as an Azure Function. The function is triggered when there are incoming records at the Azure Event Hub.
 * blob_storage: Python script for downloading the blobs created after the concise sampling in the Azure Blob Storage.
