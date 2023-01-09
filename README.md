@@ -24,6 +24,7 @@ The project is organized under 3 different main axes:
 	* data_exploration: Basic investigation of the dataset 
 	* traffic_simulation: Implementation of stream simulator.
 	* change_detection: Implementation of change detection method.
+	* final_sampling_alg_validation: Tests sampling algorithms with Jenks method and different metrtics
 
 * send_receive_code: Python scripts for sending the data in a streaming format to an Azure Event Hub.
 * concise_sampling_trigger: Implementation of concise sampling as an Azure Function. The function is triggered when there are incoming records at the Azure Event Hub.
